@@ -39,7 +39,6 @@ body {
 img {
   display: block;
   margin: 0 auto;
-  max-width: 300px;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
@@ -58,6 +57,11 @@ header {
   text-align: center;
   color: var(--paragraph-color-on-color);
   background-color: var(--paragraph-background-color);
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  height: 100px;
+
 }
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
@@ -102,13 +106,15 @@ nav {
   text-align: center;
   font-size: 1.2em;
 }
-nav  {
+nav {
   list-style-type: none;
   display: flex;
+  flex: 1;
+  gap: 50px;
+  padding: 5px 50px;
 }
 nav a {
   padding:1em;
-  min-width: 120px;
   text-decoration: none;
   padding: 10px;
 }
@@ -117,7 +123,7 @@ nav a:link, nav a:visited {
 }
 nav a:hover {
   color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+  /*background-color: var(--nav-hover-background-color);*/
 }
 .sitemap {
   display: grid;
@@ -168,15 +174,41 @@ nav a:hover {
   align-self: center;
 }
 /*Home Page CSS*/
-
-
+.logo {
+  width:100px;
+}
+.home-card {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-template-rows: auto 1fr;
+}
+.home-card h2 {
+  grid-column: 1/3;
+  text-decoration: underline;
+  margin-top: 100px;
+}
+.home-img {
+  width: 100%;
+  grid-column: 1/3;
+  grid-row: 2;
+}
+.homecontainer {
+  grid-column: 2/3;
+  grid-row: 2;
+  z-index: 2;
+}
+.homebg {
+  grid-column: 2/3;
+  grid-row: 2;
+  background-color: black;
+  opacity: 0.5;
+}
 /*Mission Page CSS*/
 
 
 .mission-card {
   height: 600px;
   width: 600px;
-  margin-top: 100px;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -257,16 +289,11 @@ nav a:hover {
   color: white;
 }
 footer {
-  background-color: white;
   color: #ffafcc;
   text-decoration: none;
   font-size: 16px;
-  margin-top:200px;
-  padding: 25px 50px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  
+  background-color:#005694;
+  padding: 10px 25px;
 }
 footer a {
   color:black;
@@ -275,6 +302,17 @@ footer a {
 footer a:hover {
   color: white;
   text-decoration :underline;
+}
+.footernav {
+  padding: 0;
+}
+.copyright:hover{
+  color: unset;
+  color: black;
+  text-decoration: none;
+}
+.social {
+  display:flex;
 }
 footer .social img {
   padding-top: 15px;
