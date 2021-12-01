@@ -30,8 +30,8 @@
             <h4>Learn More About The Best Donuts in the West </h4>
         </section>
         </div>
-        <main class="homepage-grid">
-            <section class="mission-card">
+        <main class="subpage2-grid">
+            <section class="made-card">
                 <img class="card2-img" src="images/donutmaking.jpg" alt="making donut">
                 <div class = 'infocontainer'>
                 <h2>Made With Love</h2>
@@ -41,31 +41,137 @@
                 <h3>
                 The goal of my business has always been to make and provide high-quality donuts that my customers will enjoy. If you would like to check out our specific products or make purchases, click the "Buy Now" Button below or just scroll down and see all the options we have to offer!
                 </h3>
-                <button class = 'page2button'>
-                    Buy Now
-                </button>
                 </div>
             </section>
-            <section class="information-card">
+            <section class="products-card">
                 <img class="card2-img" src="images/newdonuts.jfif" alt="making doughnut">
                 <div class = 'infocontainer'>
                 <h2>Our Products</h2>
+                <!-- Container for the image gallery -->
+<div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 13</div>
+        <img src="images/glazed-donuts.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 13</div>
+        <img src="images/jelly-donuts.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 13</div>
+        <img src="images/cinamon-twists.jpeg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 13</div>
+        <img src="images/cream-filled-donuts.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 13</div>
+        <img src="images/chocolate-glaze.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 13</div>
+        <img src="images/strawberry-donuts.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">7 / 13</div>
+          <img src="images/frosted-donuts.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">8 / 13</div>
+          <img src="images/crueller.jfif" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">9 / 13</div>
+          <img src="images/old-donuts.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">10 / 13</div>
+          <img src="images/sprinkled-donuts.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">11 / 13</div>
+          <img src="images/sour-cream-donuts.jpeg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">12 / 13</div>
+          <img src="images/baconmaple-donut.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">13 / 13</div>
+          <img src="images/donutholes.jfif" style="width:100%">
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="images/glazed-donuts.jpg" style="width:100%" onclick="currentSlide(1)" alt="Glazed Doughnuts - 1 = $0.99 | Dozen = $5.99">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/jelly-donuts.jpg" stylse="width:100%" onclick="currentSlide(2)" alt="Jelly Doughnuts - 1 =  $1.50 | Dozen = $7.50">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/cinamon-twists.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Cinnamon Twists Doughnuts - 1 = $1.99 | Dozen = $9.99">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/cream-filled-donuts.jpg" style="width:100%" onclick="currentSlide(4)" alt="Cream-Filled Doughnuts - 1 = $1.50 | Dozen = $7.50">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/chocolate-glaze.jpg" style="width:100%" onclick="currentSlide(5)" alt="Chocolate Doughnuts - 1 = $0.99 | Dozen = $5.99">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/strawberry-donuts.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Strawberry Doughnuts - 1 = $1.50 | Dozen = $7.50">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/frosted-donuts.jpg" style="width:100%" onclick="currentSlide(7)" alt="Frosted Doughnuts - 1 = $0.99 | Dozen = $5.99">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/crueller.jfif" stylse="width:100%" onclick="currentSlide(8)" alt="Crueller - 1 = $1.99 | Dozen = $10.99">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/old-donuts.jpg" style="width:100%" onclick="currentSlide(9)" alt="Old-Fashioned Doughnuts - 1 = $0.99 | Dozen = $6.99">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/sprinkled-donuts.jpg" style="width:100%" onclick="currentSlide(10)" alt="Sprinkled Doughnuts -1 = $0.99 | Dozen = $7.99">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/sour-cream-donuts.jpeg" style="width:100%" onclick="currentSlide(11)" alt="Sour Cream Doughnuts - 1 = $1.50 | Dozen = $7.50">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/baconmaple-donut.jpg" style="width:100%" onclick="currentSlide(12)" alt="Bacon Maple Doughnuts - 1 = $1.99 | Dozen = $9.99">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/donutholes.jfif" style="width:100%" onclick="currentSlide(13)" alt="Doughnut Holes - 12 Pack = $1.99 | 24 Pack = $3.99 | 48 Pack = $6.99 | 72 Pack = $10.99">
+      </div>
+    </div>
+  </div>
                 <h3>
-                Glazed Doughnuts - 1 = $0.99 | Dozen = $5.99<br>
-                Jelly Doughnuts - 1 =  $1.50 | Dozen = $7.50<br>
-                Cinnamon Twists Doughnuts - 1 = $1.99 | Dozen = $9.99<br>
-                Cream-Filled Doughnuts - 1 = $1.50 | Dozen = $7.50<br>
-                Chocolate Doughnuts - 1 = $0.99 | Dozen = $5.99<br>
-                Strawberry Doughnuts - 1 = $1.50 | Dozen = $7.50<br>
-                Frosted Doughnuts - 1 = $0.99 | Dozen = $5.99<br>
-                Crueller - 1 = $1.99 | Dozen = $10.99<br>
-                Old-Fashioned Doughnuts - 1 = $0.99 | Dozen = $6.99<br>
-                Sprinkled Doughnuts -1 = $0.99 | Dozen = $7.99<br>
-                Sour Cream Doughnuts - 1 = $1.50 | Dozen = $7.50<br>                 
-                Bacon Maple Doughnuts - 1 = $1.99 | Dozen = $9.99<br>
-                Doughnut Holes - 12 Pack = $1.99 | 24 Pack = $3.99 | <br>48 Pack = $6.99 | 72 Pack = $10.99<br>
                 We also do Custom Orders (Custom Doughnuts/Amount of Doughnuts). In order to Order Custom Doughnuts, please contact us using the 'Contact Us' tab specifically if the options available do not satisfy your needs.
                 </h3>
+                <button class = 'page2button'>
+                    Buy Now
+                </button>
                 </div>
             </section>   
         </main>
@@ -86,5 +192,37 @@
               </div>
               </nav>
           </footer>
+         <script>
+          var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 </body>
 </html>
